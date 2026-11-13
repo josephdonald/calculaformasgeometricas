@@ -1,17 +1,19 @@
-#  Arquivo principal do sistema que calcula área geométricas que virão de outros arquivos
+def area_triangulo(base, altura):
+    return (base * altura) / 2
 
-def calcular_area_retangulo:
-    pass  # Função para calcular a área do retângulo
+def area_retangulo(base, altura):
+    return base * altura
 
-def calcular_area_circulo:
-    pass  # Função para calcular a área do círculo
+print("1 - Triângulo")
+print("2 - Retângulo")
+opcao = input("Escolha: ")
 
-def calcular_area_triangulo:
-    pass  # Função para calcular a área do triângulo
+base = float(input("Base: "))
+altura = float(input("Altura: "))
 
-def main():
-    # Aqui você pode chamar as funções de cálculo de área conforme necessário
-    pass    
-
-if __name__ == "__main__":
-    main()
+if opcao == "1":
+    print("Área do triângulo:", area_triangulo(base, altura))
+elif opcao == "2":
+    print("Área do retângulo:", area_retangulo(base, altura))
+else:
+    print("Opção inválida")
